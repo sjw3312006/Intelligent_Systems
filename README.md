@@ -11,31 +11,31 @@ This project requires a Python3 installation with the numpy and matplotlib packa
 ### Execute the independent MAPF solver by using: 
       python run_experiments.py --instance instances/exp0.txt --solver Independent
       
-# Task 1 : Implement Space-Time A*
-## Task 1.1 : Searching in the Space-Time Domain
+## Task 1 : Implement Space-Time A*
+### Task 1.1 : Searching in the Space-Time Domain
      python run_experiments.py --instance instances/exp1.txt --solver Independent
      
-## Task 1.2 : Handling Vertex Constraints
+### Task 1.2 : Handling Vertex Constraints
      python run_experiments.py --instance instances/exp1.txt --solver Prioritized
    
          
-# Task 2 : Implement Prioiritized Planning
-## Task 2.1 : Adding Vertex Constraints 
+## Task 2 : Implement Prioiritized Planning
+### Task 2.1 : Adding Vertex Constraints 
      python run_experiments.py --instance instances/exp2_1.txt --solver Prioritized
 
-## Task 2.3 : Adding Additional Constraints 
+### Task 2.3 : Adding Additional Constraints 
       python run_experiments.py --instance instances/exp2_2.txt --solver Prioritized
       
-## Task 2.4 : Addressing Failures
+### Task 2.4 : Addressing Failures
        python run_experiments.py --instance instances/exp2_3.txt --solver Prioritized
        python run_experiments.py --instance instances/exp2_2.txt --solver Prioritized
                 
-# Task 3 : Implement Conflict-Based Search (CBS)
-## Task 3.1 : Detecting Collisions
+## Task 3 : Implement Conflict-Based Search (CBS)
+### Task 3.1 : Detecting Collisions
      python run_experiments.py --instance instances/exp3_1.txt --solver CBS
 
-## Task 3.4 : Testing Implementation
+### Task 3.4 : Testing Implementation
       python run_experiments.py --instance "instances/test_*" --solver CBS --batch
       
- # Task 4 : Implementing Conflict-Based Search (CBS) with Disjoint Splitting
+ ## Task 4 : Implementing Conflict-Based Search (CBS) with Disjoint Splitting
       python run_experiments.py --instance instances/exp4.txt --solver CBS
